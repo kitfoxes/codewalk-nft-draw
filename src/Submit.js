@@ -9,28 +9,24 @@ function Submit() {
       </Dialog.Trigger>
 
       <Dialog.Content maxWidth="450px">
-        <Dialog.Title>Edit profile</Dialog.Title>
-        <Dialog.Description size="2" mb="4">
-          Make changes to your profile.
-        </Dialog.Description>
-
+        <Dialog.Title>Submit your drawing</Dialog.Title>
+        
         <Flex direction="column" gap="3">
           <label>
             <Text as="div" size="2" mb="1" weight="bold">
-              Name
+              Description
             </Text>
             <TextField.Root
-              defaultValue="Freja Johnsen"
-              placeholder="Enter your full name"
+              placeholder="Enter your description"
             />
           </label>
           <label>
             <Text as="div" size="2" mb="1" weight="bold">
-              Email
+              Price
             </Text>
             <TextField.Root
-              defaultValue="freja@example.com"
-              placeholder="Enter your email"
+              defaultValue="1 ETH"
+              placeholder="Enter the price"
             />
           </label>
         </Flex>
