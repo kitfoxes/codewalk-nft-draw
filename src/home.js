@@ -1,11 +1,16 @@
 import react from "react"
-import { Excalidraw, WelcomeScreen } from "@excalidraw/excalidraw";
+import { Excalidraw, MainMenu, WelcomeScreen } from "@excalidraw/excalidraw";
 
 function Home() {
     return (
         <>
             <div style={{ height: "44rem"}}>
-                <Excalidraw >
+                <Excalidraw>
+                    <MainMenu>
+                        <MainMenu.Item>
+                            Hello Suyog
+                        </MainMenu.Item>
+                    </MainMenu>
                     <WelcomeScreen>
                         <WelcomeScreen.Center>
                             <WelcomeScreen.Center.Logo children="CodeWalk">
