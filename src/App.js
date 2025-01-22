@@ -1,11 +1,22 @@
-import React from 'react';
-import { Excalidraw } from "@excalidraw/excalidraw";
+import React, { useState } from 'react';
+import WhiteBoard from './whiteboard';
+import Home from './home';
+import { Excalidraw, WelcomeScreen } from '@excalidraw/excalidraw';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 function App() {
+
   return (
-    <div style={{height:"100vh"}}>
-      <Excalidraw/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/whiteboard" element={<WhiteBoard />} />
+        </Routes>
+      </BrowserRouter>
+      <Home />
+    </>
   );
 }
-
 export default App;
